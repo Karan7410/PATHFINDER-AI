@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinder AI - How It Works</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style> 
+        body { background-color: #0b0f19; } 
+    </style>
+</head>
+<body class="text-gray-200 font-sans min-h-screen flex flex-col">
+
+    <!-- Navigation Bar -->
+    <nav class="border-b border-gray-800 bg-[#0f172a] sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2 font-bold text-xl tracking-wide text-white">
+            <i class="fa-solid fa-file-invoice text-indigo-500"></i>
+            <span>PATHFINDER AI</span>
+        </div>
+        <div class="hidden md:flex space-x-2 text-sm font-medium text-gray-400 items-center">
+            <a href="index.html" class="hover:text-indigo-400 transition px-3 py-1.5"><i class="fa-solid fa-house mr-1"></i> Home</a>
+            <a href="analyzer.html" class="hover:text-indigo-400 transition px-3 py-1.5"><i class="fa-solid fa-magnifying-glass mr-1"></i> Analyzer</a>
+            <a href="features.html" class="hover:text-indigo-400 transition px-3 py-1.5"><i class="fa-solid fa-star mr-1"></i> Features</a>
+            <a href="how-it-works.html" class="bg-indigo-950/50 text-indigo-400 px-3 py-1.5 rounded-md"><i class="fa-solid fa-gear mr-1"></i> How It Works</a>
+            <a href="contact.html" class="hover:text-indigo-400 transition px-3 py-1.5"><i class="fa-solid fa-envelope mr-1"></i> Contact</a>
+            <a href="login.html" class="ml-4 bg-gray-800/80 hover:bg-red-950/40 text-gray-300 hover:text-red-400 border border-gray-700 hover:border-red-500/30 text-xs font-semibold px-3 py-1.5 rounded-md transition">
+                <i class="fa-solid fa-right-from-bracket mr-1"></i> Logout
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <main class="max-w-5xl mx-auto my-16 px-4 flex-grow w-full">
+        
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white mb-2">The Processing Pipeline</h2>
+            <p class="text-gray-400 text-sm max-w-xl mx-auto">From unstructured document formats to precise, data-driven career vector calculations.</p>
+        </div>
+
+        <!-- Horizontal Step Sequence -->
+        <section class="bg-[#111827]/40 border border-gray-800/80 rounded-2xl p-8 mb-16">
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-8 text-center relative">
+                <div>
+                    <div class="w-10 h-10 rounded-full bg-indigo-600 text-white font-bold text-sm flex items-center justify-center mx-auto mb-3 shadow-lg shadow-indigo-500/20">1</div>
+                    <h5 class="font-semibold text-sm text-white mb-1">Upload Resume</h5>
+                    <p class="text-[11px] text-gray-400 leading-relaxed">Drop your document as a PDF, DOCX, or Image. Our system sanitizes metadata instantly.</p>
+                </div>
+                <div>
+                    <div class="w-10 h-10 rounded-full bg-indigo-600 text-white font-bold text-sm flex items-center justify-center mx-auto mb-3 shadow-lg shadow-indigo-500/20">2</div>
+                    <h5 class="font-semibold text-sm text-white mb-1">AI Extraction</h5>
+                    <p class="text-[11px] text-gray-400 leading-relaxed">Optical Character Recognition (OCR) and Natural Language Processing extract deep semantic tokens.</p>
+                </div>
+                <div>
+                    <div class="w-10 h-10 rounded-full bg-indigo-600 text-white font-bold text-sm flex items-center justify-center mx-auto mb-3 shadow-lg shadow-indigo-500/20">3</div>
+                    <h5 class="font-semibold text-sm text-white mb-1">Vector Alignment</h5>
+                    <p class="text-[11px] text-gray-400 leading-relaxed">Mathematical models cross-examine extracted competencies against thousands of sector benchmarks.</p>
+                </div>
+                <div>
+                    <div class="w-10 h-10 rounded-full bg-indigo-600 text-white font-bold text-sm flex items-center justify-center mx-auto mb-3 shadow-lg shadow-indigo-500/20">4</div>
+                    <h5 class="font-semibold text-sm text-white mb-1">Interactive Metrics</h5>
+                    <p class="text-[11px] text-gray-400 leading-relaxed">Explore structured visualization panels showcasing skills gaps and targeted roadmaps.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why It Was Designed Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-t border-gray-800/60 pt-16 mb-16">
+            <div class="lg:col-span-7">
+                <span class="text-indigo-400 font-semibold uppercase text-xs tracking-wider">The Problem Space</span>
+                <h3 class="text-2xl font-bold text-white mt-1 mb-4">Why Pathfinder AI Was Created</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                    Modern hiring relies heavily on automated screening filters called **Applicant Tracking Systems (ATS)**. These platforms scan incoming CVs using basic keyword-matching rules. If your professional history uses non-standard titles or misses precise technical terms, the software filters it out before a human ever views it.
+                </p>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Pathfinder AI was engineered to flip this balance of power. By using identical text processing flows, it analyzes your document from an objective mathematical perspective, ensuring your professional layout remains highly resilient against machine filters.
+                </p>
+            </div>
+            <div class="lg:col-span-5 bg-[#0f172a] border border-gray-800 p-4 rounded-xl">
+                <img src="https://www.elitmus.com/blog/images/resume-parsing-insights-and-steps-to-create-your-own-parser/file-flow.jpg" alt="Resume processing pipeline flowchart layout" class="rounded-lg w-full h-auto opacity-80 hover:opacity-100 transition duration-300">
+                <p class="text-[10px] text-gray-500 text-center mt-2 italic">Fig 1.0 - Pathfinder AI Multi-format Ingestion Logic Pipeline</p>
+            </div>
+        </section>
+
+        <!-- How Useful It Is Section -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center border-t border-gray-800/60 pt-16 pb-8">
+            <div class="lg:col-span-5 order-last lg:order-first bg-[#0f172a] border border-gray-800 p-6 rounded-xl text-center">
+                <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRD8nJ1Eg7Ll8YxLTUFRgOoemxvgEOTOUwrNTs0JVzC-cfPh8Clnnvpxgp0Wi2oyjWkfzC7Z2qY4zvsX-o" alt="Data metrics and dashboard analysis iconography mapping layout" class="rounded-lg w-3/4 mx-auto opacity-75 hover:opacity-100 transition duration-300">
+                <p class="text-[10px] text-gray-500 text-center mt-4 italic">Fig 2.0 - Quantitative Analytical Output Vectors</p>
+            </div>
+            <div class="lg:col-span-7">
+                <span class="text-indigo-400 font-semibold uppercase text-xs tracking-wider">Strategic Advantage</span>
+                <h3 class="text-2xl font-bold text-white mt-1 mb-4">Unlocking Measurable Career Value</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                    Pathfinder AI bypasses standard generic suggestions to offer highly specific market positioning indicators:
+                </p>
+                <ul class="space-y-3 text-xs text-gray-300">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-nodes text-indigo-500 mr-2 mt-1"></i>
+                        <span><strong class="text-white">Eliminates Guesswork:</strong> Identifies exactly which core skills are missing for specialized target positions like Data Engineering or Cloud DevOps.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-chart-line text-indigo-500 mr-2 mt-1"></i>
+                        <span><strong class="text-white">Optimizes Content Value:</strong> Replaces passive historical descriptions with strong, quantifiable industry metrics to maximize target impact scores.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-compass text-indigo-500 mr-2 mt-1"></i>
+                        <span><strong class="text-white">Accelerates Skill Building:</strong> Provides structural milestone targets, reducing preparation overhead by pointing straight to valid credentials.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="border-t border-gray-800 bg-[#0f172a] px-6 py-6 text-center text-xs text-gray-500 mt-auto">
+        &copy; PATHFINDER AI. All rights reserved.
+    </footer>
+</body>
+</html>

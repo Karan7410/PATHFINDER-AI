@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinder AI - Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style> body { background-color: #0b0f19; } </style>
+</head>
+<body class="text-gray-200 font-sans min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <nav class="border-b border-gray-800 bg-[#0f172a] sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2 font-bold text-xl tracking-wide text-white">
+            <i class="fa-solid fa-file-invoice text-indigo-500"></i>
+            <span>PATHFINDER AI</span>
+        </div>
+        <div class="hidden md:flex space-x-2 text-sm font-medium text-gray-400 items-center">
+            <a href="index.html" class="hover:text-indigo-400 transition px-3 py-1.5"><i class="fa-solid fa-house mr-1"></i> Home</a>
+            <a href="analyzer.html" class="hover:text-indigo-400 transition px-3 py-1.5"><i class="fa-solid fa-magnifying-glass mr-1"></i> Analyzer</a>
+            <a href="features.html" class="hover:text-indigo-400 transition px-3 py-1.5"><i class="fa-solid fa-star mr-1"></i> Features</a>
+            <a href="how-it-works.html" class="hover:text-indigo-400 transition px-3 py-1.5"><i class="fa-solid fa-gear mr-1"></i> How It Works</a>
+            <a href="contact.html" class="bg-indigo-950/50 text-indigo-400 px-3 py-1.5 rounded-md"><i class="fa-solid fa-envelope mr-1"></i> Contact</a>
+            <a href="login.html" class="ml-4 bg-gray-800/80 hover:bg-red-950/40 text-gray-300 hover:text-red-400 border border-gray-700 hover:border-red-500/30 text-xs font-semibold px-3 py-1.5 rounded-md transition">
+                <i class="fa-solid fa-right-from-bracket mr-1"></i> Logout
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content Panel -->
+    <main class="max-w-4xl mx-auto my-12 px-4 w-full flex-grow flex flex-col justify-center">
+        
+        <!-- Aligned Grid System (Items Stretch to Equal Height) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch mb-8">
+            
+            <!-- Left Card: Form Module -->
+            <div class="bg-[#111827] border border-gray-800 p-8 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-2">Contact Us</h4>
+                    <p class="text-xs text-gray-400 mb-6">Have questions or systemic engine feedback? Drop us a line below.</p>
+                </div>
+                <form class="space-y-4 flex-grow flex flex-col justify-between" onsubmit="event.preventDefault(); alert('Message logged successfully.');">
+                    <div class="space-y-4">
+                        <input type="text" placeholder="Your Name" required class="w-full bg-[#0f172a] border border-gray-700 rounded-xl px-4 py-3 text-xs focus:outline-none focus:border-indigo-500 text-gray-200 transition">
+                        <input type="email" placeholder="Email Address" required class="w-full bg-[#0f172a] border border-gray-700 rounded-xl px-4 py-3 text-xs focus:outline-none focus:border-indigo-500 text-gray-200 transition">
+                        <textarea placeholder="Your Query Message" rows="4" required class="w-full bg-[#0f172a] border border-gray-700 rounded-xl px-4 py-3 text-xs focus:outline-none focus:border-indigo-500 text-gray-200 transition resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 mt-4 px-6 py-2.5 rounded-xl text-xs font-semibold text-white transition shadow-lg shadow-indigo-600/10">Send Query</button>
+                </form>
+            </div>
+
+            <!-- Right Card: Office Metadata -->
+            <div class="bg-[#111827] border border-gray-800 p-8 rounded-2xl flex flex-col justify-between">
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-2">Office Headquarters</h4>
+                    <p class="text-xs text-gray-400 mb-6">Reach out to our administrative teams or engineering labs directly.</p>
+                </div>
+                
+                <div class="text-xs space-y-4 text-gray-300 my-auto py-4">
+                    <div class="flex items-center space-x-3 p-3 rounded-xl bg-[#0f172a]/50 border border-gray-800/40">
+                        <i class="fa-solid fa-envelope text-indigo-400 text-sm w-5 text-center"></i>
+                        <span>support@PATHFINDER.ai</span>
+                    </div>
+                    <div class="flex items-center space-x-3 p-3 rounded-xl bg-[#0f172a]/50 border border-gray-800/40">
+                        <i class="fa-solid fa-phone text-indigo-400 text-sm w-5 text-center"></i>
+                        <span>+91 998576152</span>
+                    </div>
+                    <div class="flex items-center space-x-3 p-3 rounded-xl bg-[#0f172a]/50 border border-gray-800/40">
+                        <i class="fa-solid fa-location-dot text-indigo-400 text-sm w-5 text-center"></i>
+                        <span>123 Hoshiarpur, Punjab, India</span>
+                    </div>
+                </div>
+
+                <div class="text-[11px] text-gray-500 italic pt-2 border-t border-gray-800/40">
+                    Typical response windows range from 12 to 24 operational business hours.
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- User Retention / Return-Engagement Banner -->
+        <section class="bg-gradient-to-r from-indigo-950/40 via-purple-950/20 to-[#111827] border border-indigo-950 text-center p-6 rounded-2xl">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-left sm:text-left">
+                <div class="max-w-xl">
+                    <h5 class="text-sm font-bold text-white mb-1"> Don't forget to track your profile progress!</h5>
+                    <p class="text-[11px] text-gray-400 leading-relaxed">Our global career vector indexes refresh every Sunday. Bookmark this page and check back regularly to track shifts in keyword trends and update your metrics analysis.</p>
+                </div>
+                <a href="analyzer.html" class="whitespace-nowrap bg-indigo-950/60 hover:bg-indigo-900/60 border border-indigo-500/30 text-indigo-400 text-xs font-semibold px-4 py-2 rounded-xl transition">
+                    <i class="fa-solid fa-arrow-right-to-bracket mr-1"></i> Launch Analyzer
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 bg-[#0f172a] px-6 py-6 text-center text-xs text-gray-500">
+        &copy; PATHFINDER AI. All rights reserved.
+    </footer>
+</body>
+</html>
